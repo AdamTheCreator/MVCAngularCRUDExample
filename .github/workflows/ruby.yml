@@ -71,8 +71,8 @@ jobs:
         PGUSER: postgres
         PGPORT: ${{ job.services.postgres.ports[5432] }} # get randomly assigned published port
         RAILS_ENV: test
-        PATH: ~/gems/knapsack_pro-ruby
-        TEST_SUITE_TOKEN_RSPEC: ${{ secrets.KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC }}
+        PATH: ~/gems/rubyApp-ruby
+        TEST_SUITE_TOKEN_RSPEC: ${{ secrets.TEST_SUITE_TOKEN_RSPEC }}
         CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
         CI_NODE_INDEX: ${{ matrix.ci_node_index }}
       run: |
